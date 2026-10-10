@@ -1,0 +1,28 @@
+UZ NAVO BOT — RAILWAY V3 TEZ DEPLOY
+
+1) Shu papkani GitHub repo'ga yuklang.
+2) Railway loyihangizda repo'ni ulang.
+3) Variables:
+   BOT_TOKEN=...
+   REQUIRED_CHANNEL=@kanalusername
+   REQUIRED_CHANNEL_URL=https://t.me/kanalusername
+   REQUIRED_CHANNEL_NAME=UZ NAVO
+4) Railway Redis yoki Upstash Redis yarating.
+5) Redis URL'ni yozing:
+   REDIS_URL=redis://...
+6) Quyidagilarni qoldiring:
+   SERVICE_MODE=all
+   YOUTUBE_PROVIDERS=pytubefix,yt-dlp
+   WORKER_CONCURRENCY=2
+7) Deploy qiling.
+
+Agar alohida worker service qilmoqchi bo'lsangiz:
+- Bot service: SERVICE_MODE=bot
+- Worker service: SERVICE_MODE=worker
+Ikkalasida ham bir xil BOT_TOKEN va REDIS_URL bo'lishi kerak.
+
+MUHIM:
+- .env fayli ZIP ichiga qo'shilmadi. Tokenni Railway Variables orqali kiriting.
+- Redis bo'lmasa bot inline fallback rejimida ham ishlaydi.
+- Worker yiqilsa run_backend uni qayta ishga tushiradi; bot ishlashda davom etadi.
+- Bu tizim anti-bot/auth himoyasini bypass qilmaydi; provider failover va load balancing uchun qurilgan.

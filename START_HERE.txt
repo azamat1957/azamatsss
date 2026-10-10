@@ -1,0 +1,27 @@
+UZ NAVO BOT - BACKEND V3 ISHGA TUSHIRISH
+
+ENG OSON RAILWAY USULI:
+1) Shu papkani GitHub repo'ga yuklang.
+2) Railway'da repo'ni ulang.
+3) Variables ichiga BOT_TOKEN va kanal sozlamalarini kiriting.
+4) Redis yarating va REDIS_URL ni kiriting.
+5) SERVICE_MODE=all qoldiring.
+6) Deploy qiling.
+
+WINDOWSDA:
+1) .env.example nusxasidan .env yarating.
+2) BOT_TOKEN= qatoriga BotFather tokeningizni yozing.
+3) Kanal sozlamalarini yozing.
+4) run_windows.bat ni ishga tushiring.
+
+BACKEND V3:
+- PyTubeFix asosiy YouTube provider
+- yt-dlp fallback provider
+- Circuit breaker
+- Redis media queue
+- Alohida worker pool
+- Telegram file_id cache
+- Worker yiqilsa avtomatik restart
+- Redis ishlamasa inline fallback
+
+BATAFSIL: BACKEND_V3_README_UZ.md va DEPLOY_RAILWAY_V3.txt

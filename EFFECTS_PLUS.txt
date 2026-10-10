@@ -1,0 +1,10 @@
+Qo'shilgan effektlar:
+- 🔊 Bass Booster — kuchli low/sub bass EQ
+- 🥁 Mid Bass — 90–230 Hz atrofida punch
+- 🏟 Concert Hall — sun'iy zal reverbi/echo
+- 🎧 8D — stereo chap-o'ng aylanish
+- 🚘 Carrozeria — car-audio uslubidagi EQ preset
+
+Eslatma:
+"Carrozeria" bu haqiqiy Pioneer DSP profilining nusxasi emas; bot uchun FFmpeg EQ yordamida
+car-audio uslubida tayyorlangan preset.

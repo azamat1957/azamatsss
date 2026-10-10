@@ -1,0 +1,7 @@
+python-telegram-bot==22.8
+python-dotenv>=1.0.1
+shazamio==0.8.1
+pytubefix>=11.2.0,<12
+yt-dlp[default]>=2026.9.0
+redis>=5.2,<7
+curl-cffi>=0.16.3

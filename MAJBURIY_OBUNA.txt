@@ -1,0 +1,31 @@
+MAJBURIY OBUNA SOZLAMASI
+
+1) Botni majburiy obuna qilinadigan kanalga qo'shing.
+2) Botga kanal ichida ADMIN huquqi bering.
+   A'zolikni ishonchli tekshirish uchun bu muhim.
+3) Eski .env faylingizni oching va oxiriga quyidagilarni qo'shing:
+
+REQUIRED_CHANNEL=@kanalusername
+REQUIRED_CHANNEL_URL=https://t.me/kanalusername
+REQUIRED_CHANNEL_NAME=UZ NAVO
+
+Public kanal misoli:
+REQUIRED_CHANNEL=@uznavo
+REQUIRED_CHANNEL_URL=https://t.me/uznavo
+REQUIRED_CHANNEL_NAME=UZ NAVO
+
+Private kanal uchun:
+REQUIRED_CHANNEL=-1001234567890
+REQUIRED_CHANNEL_URL=https://t.me/+SIZNING_INVITE_LINK
+REQUIRED_CHANNEL_NAME=UZ NAVO
+
+4) Botni qayta ishga tushiring:
+.\.venv\Scripts\python.exe bot.py
+
+Ishlash tartibi:
+- Obuna bo'lmagan foydalanuvchiga bot funksiyalari yopiladi.
+- "Kanalga obuna bo'lish" va "Obunani tekshirish" tugmalari chiqadi.
+- Foydalanuvchi a'zo bo'lgach "Obunani tekshirish" ni bosadi.
+- Tekshiruvdan o'tsa qidiruv, yuklash, Shazam va effektlar ochiladi.
+
+Agar REQUIRED_CHANNEL bo'sh qoldirilsa, majburiy obuna o'chiriladi.

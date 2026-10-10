@@ -1,0 +1,10 @@
+UZ NAVO BOT Backend V3 - VALIDATION
+
+- Python syntax/py_compile: PASS
+- Provider fallback unit smoke-test: PASS
+- Circuit breaker smoke-test: PASS
+- .env/live BOT_TOKEN packaged: NO
+- Redis absent mode: bot inline fallback supported
+- Redis present mode: bot + worker supported
+
+Eslatma: bu muhitda Telegram/YouTube/Redis tarmoq integratsiyasini jonli ishga tushirish testi bajarilmadi. Deploydan keyin Railway loglarida provider/worker holatini tekshiring.
