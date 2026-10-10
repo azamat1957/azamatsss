@@ -286,8 +286,16 @@ class YtDlpProvider(BaseProvider):
             "no_warnings": True,
             "noplaylist": True,
             "socket_timeout": 20,
-            "retries": 2,
-            "fragment_retries": 2,
+            "retries": 3,
+            "fragment_retries": 3,
+            # Railway/datacenter IP-larda YouTube web klienti ko'pincha
+            # PO-token/bot tekshiruviga tushadi. web_embedded klienti esa
+            # token talab qilmaydigan formatlarni olishga yordam beradi.
+            "extractor_args": {
+                "youtube": {
+                    "player_client": ["web_embedded"],
+                }
+            },
         }
         if self.proxy:
             opts["proxy"] = self.proxy
